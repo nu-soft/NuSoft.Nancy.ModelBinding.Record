@@ -3,18 +3,19 @@
   <metadata>
     <id>NuSoft.Nancy.ModelBinding.FSharp</id>
     <version>$version$</version>
-    <authors>Paweł Paluch (@ppaluch)</authors>
+    <authors>Pawel Paluch (@ppaluch)</authors>
+    <owners>Pawel Paluch (@ppaluch)</owners>
     <licenseUrl>https://github.com/nu-soft/NuSoft.Nancy.ModelBinding.Record/blob/master/LICENCE</licenseUrl>
     <projectUrl>https://github.com/nu-soft/NuSoft.Nancy.ModelBinding.Record/</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>F# types ModelBinder for Nancy.</description>
     <copyright>Copyright © 2017 NU-Soft</copyright>
-    <tags>Nancy</tags>
+    <tags>Nancy FSharp Record Option</tags>
+    <dependencies>
+      <dependency id="Nancy" version="1.4.3" />
+    </dependencies>
   </metadata>
   <files>
     <file src="..\NuSoft.Nancy.ModelBinding.FSharp\bin\Release\NuSoft.Nancy.ModelBinding.FSharp.dll" target="lib\net462" />
   </files>
-  <dependencies>
-    <dependency id="Nancy" version="1.4.3" />
-  </dependencies>
 </package>

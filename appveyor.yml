@@ -13,4 +13,10 @@ after_test:
 artifacts:
   - path: NuSoft.Nancy.ModelBinding.FSharp\bin\Release\NuSoft.Nancy.ModelBinding.FSharp.dll
     name: NuSoft.Nancy.ModelBinding.FSharp.dll
-  #- path: '**\*.nupkg'
+  - path: '**\NuSoft.Nancy.ModelBinding.FSharp.*.nupkg'
+
+deploy:
+  provider: NuGet
+  api_key:
+    secure: N3xcz9MEulgMmoxxgr/JF15rkxlRNkZ01zMQa9QwZu9BPsbdD2FbXkjc6txsi+HW
+  artifact: /.*\.nupkg/
