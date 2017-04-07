@@ -10,11 +10,11 @@
     <description>F# types ModelBinder for Nancy.</description>
     <copyright>Copyright © 2017 NU-Soft</copyright>
     <tags>Nancy</tags>
+    <dependencies>
+      <dependency id="Nancy" version="1.4.3" />
+    </dependencies>
   </metadata>
   <files>
     <file src="..\NuSoft.Nancy.ModelBinding.FSharp\bin\Release\NuSoft.Nancy.ModelBinding.FSharp.dll" target="lib\net462" />
   </files>
-  <dependencies>
-    <dependency id="Nancy" version="1.4.3" />
-  </dependencies>
 </package>
