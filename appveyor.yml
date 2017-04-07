@@ -13,4 +13,4 @@ after_test:
 artifacts:
   - path: NuSoft.Nancy.ModelBinding.FSharp\bin\Release\NuSoft.Nancy.ModelBinding.FSharp.dll
     name: NuSoft.Nancy.ModelBinding.FSharp.dll
-  - path: '**\*.nupkg'
+  - path: '**\NuSoft.Nancy.ModelBinding.FSharp.*.nupkg'
