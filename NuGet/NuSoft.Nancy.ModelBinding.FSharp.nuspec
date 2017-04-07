@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>F# types ModelBinder for Nancy.</description>
     <copyright>Copyright © 2017 NU-Soft</copyright>
-    <tags>Nancy</tags>
+    <tags>Nancy FSharp Record Option</tags>
     <dependencies>
       <dependency id="Nancy" version="1.4.3" />
     </dependencies>
