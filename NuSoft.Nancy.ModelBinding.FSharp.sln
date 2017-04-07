@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NuSoft.Nancy.ModelBinding.FSharp", "NuSoft.Nancy.ModelBinding.FSharp\NuSoft.Nancy.ModelBinding.FSharp.fsproj", "{3EA3B1C9-2B38-49F2-BBD7-57A6A12AF579}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2DFAFCF0-725E-439F-B69E-F233C0632169}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NuSoft.Nancy.ModelBinding.FSharp.Tests", "NuSoft.Nancy.ModelBinding.FSharp.Tests\NuSoft.Nancy.ModelBinding.FSharp.Tests.fsproj", "{57F98B4A-2581-48B7-94A7-2C05C7D7DE20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EA3B1C9-2B38-49F2-BBD7-57A6A12AF579}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA3B1C9-2B38-49F2-BBD7-57A6A12AF579}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA3B1C9-2B38-49F2-BBD7-57A6A12AF579}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA3B1C9-2B38-49F2-BBD7-57A6A12AF579}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57F98B4A-2581-48B7-94A7-2C05C7D7DE20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F98B4A-2581-48B7-94A7-2C05C7D7DE20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F98B4A-2581-48B7-94A7-2C05C7D7DE20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57F98B4A-2581-48B7-94A7-2C05C7D7DE20}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{57F98B4A-2581-48B7-94A7-2C05C7D7DE20} = {2DFAFCF0-725E-439F-B69E-F233C0632169}
+	EndGlobalSection
+EndGlobal
