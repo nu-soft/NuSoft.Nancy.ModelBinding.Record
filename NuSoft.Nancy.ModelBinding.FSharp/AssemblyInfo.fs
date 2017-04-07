@@ -7,12 +7,12 @@ open System.Runtime.InteropServices
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[<assembly: AssemblyTitle("NuSoft.Nancy.ModelBinding.Record")>]
-[<assembly: AssemblyDescription("F# Record ModelBinder for Nancy")>]
+[<assembly: AssemblyTitle("NuSoft.Nancy.ModelBinding.FSharp")>]
+[<assembly: AssemblyDescription("F# types ModelBinder for Nancy.")>]
 [<assembly: AssemblyConfiguration("")>]
 [<assembly: AssemblyCompany("NU-Soft")>]
-[<assembly: AssemblyProduct("NuSoft.Nancy.ModelBinding.Record")>]
-[<assembly: AssemblyCopyright("Copyright ©  2017 NU-Soft")>]
+[<assembly: AssemblyProduct("NuSoft.Nancy.ModelBinding.FSharp")>]
+[<assembly: AssemblyCopyright("Copyright © 2017 NU-Soft")>]
 [<assembly: AssemblyTrademark("")>]
 [<assembly: AssemblyCulture("")>]
 
