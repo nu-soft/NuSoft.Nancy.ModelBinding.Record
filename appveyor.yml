@@ -1,0 +1,16 @@
+branches:
+  only:
+    - master
+    
+before_build:
+  - nuget restore
+platform: Any CPU
+configuration: Release
+
+after_test:
+  - ps: .\nuget\pack.ps1
+  
+artifacts:
+  - path: NuSoft.Nancy.ModelBinding.FSharp\bin\Release\NuSoft.Nancy.ModelBinding.FSharp.dll
+    name: NuSoft.Nancy.ModelBinding.FSharp.dll
+  #- path: '**\*.nupkg'
