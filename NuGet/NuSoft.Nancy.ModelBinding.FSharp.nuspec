@@ -15,7 +15,6 @@
       <dependency id="Nancy" version="1.4.3" />
     </dependencies>
     <releaseNotes>
-      Version 1.0.1 - 2015-04-10
       Updated target to net46
     </releaseNotes>
   </metadata>
