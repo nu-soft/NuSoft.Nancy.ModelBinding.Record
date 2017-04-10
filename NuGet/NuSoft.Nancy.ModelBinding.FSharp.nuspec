@@ -14,8 +14,12 @@
     <dependencies>
       <dependency id="Nancy" version="1.4.3" />
     </dependencies>
+    <releaseNotes>
+      Version 1.0.1 - 2015-04-10
+      Updated target to net46
+    </releaseNotes>
   </metadata>
   <files>
-    <file src="..\NuSoft.Nancy.ModelBinding.FSharp\bin\Release\NuSoft.Nancy.ModelBinding.FSharp.dll" target="lib\net462" />
+    <file src="..\NuSoft.Nancy.ModelBinding.FSharp\bin\Release\NuSoft.Nancy.ModelBinding.FSharp.dll" target="lib\net46" />
   </files>
 </package>
