@@ -7,6 +7,14 @@ before_build:
 platform: Any CPU
 configuration: Release
 
+version: '1.0.{build}'
+assembly_info:
+  patch: true
+  file: MyVersion.cs
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+
 after_test:
   - ps: .\nuget\pack.ps1
   
