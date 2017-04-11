@@ -15,7 +15,7 @@
       <dependency id="Nancy" version="1.4.3" />
     </dependencies>
     <releaseNotes>
-      Updated target to net46
+      Added missing key name in exception
     </releaseNotes>
   </metadata>
   <files>

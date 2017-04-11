@@ -9,6 +9,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{2DFAFCF0
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "NuSoft.Nancy.ModelBinding.FSharp.Tests", "NuSoft.Nancy.ModelBinding.FSharp.Tests\NuSoft.Nancy.ModelBinding.FSharp.Tests.fsproj", "{57F98B4A-2581-48B7-94A7-2C05C7D7DE20}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{EFF5EDF9-B452-4254-BB8B-8498CBDB1370}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		NuGet\NuGet.exe = NuGet\NuGet.exe
+		NuGet\NuSoft.Nancy.ModelBinding.FSharp.nuspec = NuGet\NuSoft.Nancy.ModelBinding.FSharp.nuspec
+		NuGet\pack.ps1 = NuGet\pack.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

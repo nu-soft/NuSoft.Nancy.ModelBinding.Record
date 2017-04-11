@@ -22,6 +22,7 @@
       if form.ContainsKey(field) then
         form.[field]
       else
+        failwithf "Key %s not found" field
         new KeyNotFoundException() |> raise
     f :?> DynamicDictionaryValue
 
