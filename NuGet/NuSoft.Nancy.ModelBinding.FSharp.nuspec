@@ -15,7 +15,7 @@
       <dependency id="Nancy" version="1.4.3" />
     </dependencies>
     <releaseNotes>
-      Added missing key name in exception
+      Added basic support for enums.
     </releaseNotes>
   </metadata>
   <files>

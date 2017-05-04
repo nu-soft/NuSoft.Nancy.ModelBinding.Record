@@ -34,6 +34,16 @@ module RecordTests =
     ArrField: SimpleRecord array
   }
 
+  type BYTEEnum = | Value = 1uy 
+  type LINTEnum = | Value = 2L 
+  type DINTEnum = | Value = -3L 
+
+  type RecordWithEnum = {
+    Field1: BYTEEnum
+    Field2: LINTEnum
+    Field3: DINTEnum
+  }
+
   
 
   [<Fact>]
@@ -241,3 +251,37 @@ module RecordTests =
     let res = Parse.bind dd typeof<SimpleRecord option> "" :?> SimpleRecord option
 
     Assert.True(res |> Option.isNone)
+    
+    
+  [<Fact>]
+  let ``record enum`` () =
+    let dd = new DynamicDictionary()
+    let field1 = BYTEEnum.Value
+    let field2 = LINTEnum.Value
+    let field3 = DINTEnum.Value
+    dd.Add("field1", field1 |> byte)
+    dd.Add("field2", field2 |> int64)
+    dd.Add("field3", field3 |> int)
+    
+    Assert.True(rb.CanBind(typeof<RecordWithEnum>))
+    let res = Parse.bind dd typeof<RecordWithEnum> "" :?> RecordWithEnum
+
+    Assert.Equal(field1, res.Field1)
+    Assert.Equal(field2, res.Field2)
+    Assert.Equal(field3, res.Field3)
+    
+  [<Fact>]
+  let ``record with invalid enum`` () =
+    let dd = new DynamicDictionary()
+    let field = 234
+    dd.Add("field1", field )
+    dd.Add("field2", field )
+    dd.Add("field3", field )
+    
+    Assert.True(rb.CanBind(typeof<RecordWithEnum>))
+    
+    
+
+    let ex = Assert.ThrowsAny(fun () -> Parse.bind dd typeof<RecordWithEnum> "")
+
+    ()
