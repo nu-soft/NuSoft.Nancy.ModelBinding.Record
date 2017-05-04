@@ -269,6 +269,23 @@ module RecordTests =
     Assert.Equal(field1, res.Field1)
     Assert.Equal(field2, res.Field2)
     Assert.Equal(field3, res.Field3)
+
+  [<Fact>]
+  let ``record enum2`` () =
+    let dd = new DynamicDictionary()
+    let field1 = BYTEEnum.Value
+    let field2 = LINTEnum.Value
+    let field3 = DINTEnum.Value
+    dd.Add("field1", field1 |> byte |> string)
+    dd.Add("field2", field2 |> int64 |> string)
+    dd.Add("field3", field3 |> int |> string)
+    
+    Assert.True(rb.CanBind(typeof<RecordWithEnum>))
+    let res = Parse.bind dd typeof<RecordWithEnum> "" :?> RecordWithEnum
+
+    Assert.Equal(field1, res.Field1)
+    Assert.Equal(field2, res.Field2)
+    Assert.Equal(field3, res.Field3)
     
   [<Fact>]
   let ``record with invalid enum`` () =

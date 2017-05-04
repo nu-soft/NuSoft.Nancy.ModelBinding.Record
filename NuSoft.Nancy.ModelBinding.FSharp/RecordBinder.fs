@@ -17,15 +17,17 @@ module Parse =
       | t when t.IsEnum ->
         
         let dynValue = Helpers.getFieldStrict form prefix
-        match Type.GetTypeCode(dynValue.Value.GetType()) with
-          | TypeCode.Byte
-          | TypeCode.SByte
-          | TypeCode.UInt16
-          | TypeCode.UInt32
-          | TypeCode.UInt64
-          | TypeCode.Int16
-          | TypeCode.Int32
-          | TypeCode.Int64 -> 
+
+        match Type.GetTypeCode(dynValue.Value.GetType()),System.Int64.TryParse(dynValue.Value.ToString(), ref 0L) with
+          | TypeCode.Byte,_
+          | TypeCode.SByte,_
+          | TypeCode.UInt16,_
+          | TypeCode.UInt32,_
+          | TypeCode.UInt64,_
+          | TypeCode.Int16,_
+          | TypeCode.Int32,_
+          | TypeCode.Int64,_ 
+          | _,true ->
             let converted = Convert.ChangeType(dynValue.Value,t.GetEnumUnderlyingType())
             if Enum.IsDefined(t, converted) |> not then 
               failwithf "Invalid enum value for key %s; only defined fileds are currently supported" prefix
